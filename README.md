@@ -23,6 +23,6 @@ podman build -t spoofdpi .
 
 Run the SpoofDPI container, forwarding port 8080 and setting up DNS-over-HTTPS (DoH):
 ```
-podman run --name spoofdpi -p 8080:8080 spoofdpi -dns-addr 1.1.1.1 -enable-doh -window-size 1
+podman run --name spoofdpi -p 8080:8080 spoofdpi -addr 0.0.0.0 -dns-addr 1.1.1.1 -enable-doh -window-size 1
 ```
 For a detailed explanation and additional options, please refer to the [SpoofDPI usage guide](https://github.com/xvzc/SpoofDPI?tab=readme-ov-file#usage).
